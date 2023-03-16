@@ -41,7 +41,7 @@ jQuery(window).resize(function () {
 });
 
 
-function mostrarp(divNum,btns){
+function mostrarp(divNum){
 	document.getElementById("text1").classList.add("hide");
 	document.getElementById("text2").classList.add("hide");
 	document.getElementById("text3").classList.add("hide");
@@ -53,7 +53,13 @@ function mostrarp(divNum,btns){
   
 	// Show the specific div
 	document.getElementById("text" + divNum).classList.remove("hide");
-	document.getElementById("btn" + btns).classList.remove("hide");
+}
+
+function quitar(){
+	let negro= document.getElementById("negro");
+
+	negro.classList.remove("negro");
+	negro.classList.add("negro-move");
 }
 
 function cerrar(){

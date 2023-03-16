@@ -16,39 +16,39 @@
 
 </head>
 
-<body>
+<body style="overflow-x:hidden; overflow-y:hidden">
 
   <div class="bgcontenedor">
     <div class="gris"></div>
-    <div class="negro"></div>
+    <div class="negro" id="negro"></div>
   </div>
-  <div class="princ btn1" onclick="mostrarp(1,2)" id="btn1">
+  <div class="princ btn1" onclick="quitar()" id="btn1">
     <p>Introducción</p>
     <div class="logo1 plus"><img src="images\plus.png" alt=""></div>
   </div>
   <div class="contep">
 
-    <div class="princ hide btn2" onclick="mostrarp(2,3)" id="btn2">
+    <div class="princ btn2" onclick="mostrarp(2)" id="btn2">
+      <div class="logo1 "><img src="images\plus.png" alt=""></div>
+    </div>
+
+    <div class="princ  btn3" onclick="mostrarp(3)" id="btn3">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
 
-    <div class="princ hide btn3" onclick="mostrarp(3,4)" id="btn3">
+    <div class="princ  btn4" onclick="mostrarp(4)" id="btn4">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
 
-    <div class="princ hide btn4" onclick="mostrarp(4,5)" id="btn4">
+    <div class="princ  btn5" onclick="mostrarp(5)" id="btn5">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
 
-    <div class="princ hide btn5" onclick="mostrarp(5,6)" id="btn5">
+    <div class="princ hide btn6" onclick="mostrarp(6)" id="btn6">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
 
-    <div class="princ hide btn6" onclick="mostrarp(6,7)" id="btn6">
-      <div class="logo1"><img src="images\plus.png" alt=""></div>
-    </div>
-
-    <div class="princ hide btn7" onclick="mostrarp(7,8)" id="btn7">
+    <div class="princ hide btn7" onclick="mostrarp(7)" id="btn7">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
   </div>
@@ -59,18 +59,19 @@
         <p class="equis">X</p>
       </div>
       <h3>Introducción</h3>
-      <p>Es una de las propuestas más radicales para cambiar el <i>chip</i> en nuestra empresa frente a lo que ha sido
-        la
-        estructura de un equipo tradicional y la desarrolló Matt Mullenweg, CEO de Auttomatic, empresa que está detrás
-        de
-        WordPress, una de las plataformas más conocidas para crear páginas web y toda una estructura digital de páginas
-        web en las empresas. ​<br>
-        Matt Mullenweg propuso estos cinco niveles de trabajo ya que Auttomatic es una empresa 100 % sin oficinas
-        centrales y con equipos 100 % distribuidos geográficamente, que han tratado de ir ascendiendo por esa pirámide
-        de
-        cinco niveles de teletrabajo.​
-        Así que vamos a revisar a detalle los cinco niveles.
-      </p>
+      <ul>
+        <li>Banca, fintech y neobancos en Latam con valuación de +1B USD.</li>
+        <li>
+          <ul>
+            <li>Nubank (Brasil)</li>
+            <li>Ualá (Argentina)</li>
+            <li>Neon (Brasil)</li>
+            <li>C6 Bank (Brasil)</li>
+            <li>Banco Pan (Brasil)</li>
+            <li>Inter (Brasil)</li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -78,46 +79,80 @@
     <div class="cerrar" onclick="cerrar()">
       <p class="equis">X</p>
     </div>
-    <h3>Nivel 0</h3>
-    <p>El nivel cero es cuando el trabajo solo puede realizarse si te encuentras físicamente presente.</p>
+    <ul><!-- start of  main list-->
+      <li>Banca, fintech y neobancos en Latam con valuación de +1B USD.
+        <ul class="subullet"><!-- start of nested list-->
+          <li>Nubank (Brasil)</li>
+          <li>Ualá (Argentina)</li>
+          <li>Neon (Brasil)</li>
+          <li>C6 Bank (Brasil)</li>
+          <li>Banco Pan (Brasil)</li>
+          <li>Inter (Brasil)</li>
+        </ul><!--end of nested list-->
+      </li>
+    </ul><!--end of  main list -->
   </div>
 
   <div class="texto1 hide texto3" id="text3">
     <div class="cerrar" onclick="cerrar()">
       <p class="equis">X</p>
     </div>
-    <h3>Nivel 1​</h3>
-    <p>El primer nivel es el que se denomina “sin acción deliberada” y es cuando las empresas no han hecho nada para
-      apoyar el trabajo remoto, no dan facilidades, no aportan herramientas y simplemente se han tenido que ver forzadas
-      a teletrabajar en temas puntuales, pero cuanto antes intentan volver a la presencialidad.</p>
+    <ul><!-- start of  main list-->
+      <li><i>e-commerce</i>
+        <ul class="subullet"><!-- start of nested list-->
+          <li>Lumingo (Perú)
+            <ul class="subsubbullet">
+              <li>Market place para empresas que quieren tener un canal de venta digital.</li>
+            </ul>
+          </li>
+          <li>Culqi (Perú)
+            <ul>
+              <li>Pasarela de pago para procesar pagos de <i>e-commerce</i>.</li>
+            </ul>
+          </li>
+        </ul><!--end of nested list-->
+      </li>
+    </ul><!--end of  main list -->
   </div>
 
   <div class="texto1 hide texto4" id="text4">
     <div class="cerrar" onclick="cerrar()">
       <p class="equis">X</p>
     </div>
-    <h3>Nivel 2​</h3>
-    <p>El segundo nivel es el de “recrear” y aquí es donde seguramente está la mayoría de las empresas, tratan
-      simplemente de aplicar el mismo método de trabajo presencial, con reuniones ineficientes e innecesarias, con
-      interrupciones, comunicación en tiempo real, llamadas, etcétera; excepto que ahora es <i>online</i>. Así que, si
-      ya
-      existían problemas en el entorno físico, ahora podrían existir más porque se añaden todavía más inconvenientes del
-      entorno <i>online</i>. ​
-
-      Aquí todavía no hemos pasado a los niveles donde realmente se obtienen los beneficios de teletrabajar, nos
-      quedamos en los niveles que nos bloquean, donde parece que el teletrabajo no es la mejor opción. </p>
+    <ul><!-- start of  main list-->
+      <li>Wally (Perú)
+        <ul class="subullet"><!-- start of nested list-->
+          <li>Sistema de punto de ventas (POS Saas) que potencia la gestión de los negocios.</li>
+        </ul><!--end of nested list-->
+      </li>
+    </ul><!--end of  main list -->
   </div>
 
   <div class="texto1 hide texto5" id="text5">
     <div class="cerrar" onclick="cerrar()">
       <p class="equis">X</p>
     </div>
-    <h3>Nivel 3​</h3>
-    <p>El tercer nivel es cuando las empresas empiezan a adaptarse al medio de manera no muy sofisticada, pero con
-      herramientas por ejemplo como un Google Docs u otras herramientas para compartir documentos en la nube,
-      infraestructura de <i>software</i> adicional, así como mejores equipamientos para optimizar el trabajo remoto. Se
-      empiezan a sacar los aspectos positivos de teletrabajar; pero los niveles realmente interesantes son el cuarto y
-      quinto, vamos a revisarlos.</p>
+    <ul><!-- start of  main list-->
+      <li>Banca digital para consumidores
+        <ul class="subullet"><!-- start of nested list-->
+          <li>Tyba (Colombia)
+            <ul class="subsubbullet">
+              <li>Broker para clientes con tickets pequeños.</li>
+            </ul>
+          </li>
+          <li>Nequi (Colombia)
+            <ul>
+              <li>Iniciativa de banco tradicional.</li>
+            </ul>
+          </li>
+          <li>Tenpo (Chile)
+            <ul>
+              <li>Ecosistema financiero que quiere ser el primer neobanco en ese país.</li>
+            </ul>
+          </li>
+        </ul><!--end of nested list-->
+      </li>
+    </ul><!--end of  main list -->
   </div>
 
   <div class="texto1 hide texto6" id="text6">

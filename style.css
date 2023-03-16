@@ -6,6 +6,7 @@
   margin: 0;
 }
 
+
 .very-specific-design {
   width: 1000px;
   height: 720px;
@@ -70,19 +71,29 @@ a {
   background-size: 102% 89%;
   background-repeat:no-repeat ;
   max-width: 100%;
-  background-image: url("S5-Gg-14.png");
+  background-image: url("organigrama.png");
 }
 
 .gris {
-
+  
   width: 50%;
   height: 100vh;
 }
 
 .negro {
-  width: 50%;
-  height: 100vh;
-  
+  /*background-color: #008AFF;*/
+  width: 69%;
+  height: 89vh;
+  margin-top: 34px;
+  transition: all 2s;
+}
+.negro-move{
+  background-color: #008AFF;
+  width: 69%;
+  height: 89vh;
+  margin-top: 34px;
+  transition: all 2s;
+  margin-left: 703px;
 }
 
 .letrasG {
@@ -140,7 +151,6 @@ a {
   border-radius: 10px;
   width: 18%;
   height: 16%;
-  border: solid #fff 2px;
   margin-top: 40%;
   margin-left: 6.25%;
   cursor: pointer;
@@ -156,31 +166,56 @@ a {
   -moz-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
 }
 .btn1{
-  background-color: #000;
   position: absolute;
-  margin-top: -392px;
-  margin-left: 695px;
+  margin-top: -377px;
+  margin-left: 169px;
   line-height: 3.5;
   font-size: 19px;
-  color: #ffffff;
-  height: 70px;
+  color: rgba(red, green, blue, 0);
+  height: 135px;
+  width: 193px;
+  z-index: 100;
 }
 
 .btn2{
-  margin-top: 214px;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 504px;
+  font-size: 19px;
+  height: 68px;
+  width: 214px;
+  z-index: 100;
 }
 
 .btn3{
-  margin-top: 157px;
+  position: absolute;
+  margin-top: 111px;
+  margin-left: 504px;
+  font-size: 19px;
+  height: 68px;
+  width: 214px;
+  z-index: 100;
 }
 .btn4{
-  margin-top: 110px;
+  position: absolute;
+  margin-top: 222px;
+  margin-left: 504px;
+  font-size: 19px;
+  height: 68px;
+  width: 214px;
+  z-index: 100;
 }
 .btn5{
-  margin-top: 58px;
+  position: absolute;
+  margin-top: 333px;
+  margin-left: 504px;
+  font-size: 19px;
+  height: 68px;
+  width: 214px;
+  z-index: 100;
 }
 .btn6{
-  margin-top: 16px;
+  margin-top: -31px;
 }
 .btn7{
   margin-top: -31px;
@@ -236,7 +271,7 @@ a {
 
 .logo1 img {
   width: 71%;
-  transform: translateY(-17px);
+  transform: translateY(-5px);
 }
 
 .contenedor {
@@ -575,10 +610,23 @@ a {
   margin-top: 6%;
 }
 
+.subullet{
+  margin-left: 22px;
+}
+
+.subsubullet{
+  margin-left: 32px;
+}
+
+ul{
+  margin-left: 10px;
+}
+
 .texto1{
   position: absolute;
   margin-top: -335px;
   margin-left: 234px;
+  padding-left: 10px;
   width: 72%;
   height: 41%;
   background-color: #fff;
@@ -591,53 +639,55 @@ a {
   padding-right: 16px;
   transition: all 1s;
   align-content: center;
-  text-align:justify;
   line-height: 21px;
+  z-index: 200;
   box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
 }
 
+
 .texto2{
-  margin-top: -273px;
-  margin-left: 234px;
-  width: 72%;
-  height: 15%;
-}
-
-.texto3{
-  margin-top: -273px;
-  margin-left: 234px;
-  width: 72%;
-  height: 23%;
-}
-
-.texto4{
-  margin-top: -305px;
-  margin-left: 234px;
-  width: 72%;
+  margin-top: -454px;
+  margin-left: 524px;
+  width: 38%;
   height: 36%;
 }
 
+
+.texto3{
+  margin-top: -352px;
+  margin-left: 524px;
+  width: 38%;
+  height: 36%;
+}
+
+.texto4{
+  margin-top: -250px;
+  margin-left: 524px;
+  width: 38%;
+  height: 20%
+}
+
 .texto5{
-  margin-top: -273px;
-  margin-left: 234px;
-  width: 72%;
-  height: 30%;
+  margin-top: -287px;
+  margin-left: 524px;
+  width: 38%;
+  height: 40%;
 }
 
 .texto6{
-  margin-top: -336px;
-  margin-left: 234px;
-  width: 72%;
-  height: 47%;
+  margin-top: -46px;
+  margin-left: 524px;
+  width: 38%;
+  height: 36%;
 }
 
 .texto7{
-  margin-top: -273px;
-  margin-left: 234px;
-  width: 72%;
-  height: 20%;
+  margin-top: -454px;
+  margin-left: 524px;
+  width: 38%;
+  height: 36%;
 }
 
 h3{
