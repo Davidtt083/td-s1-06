@@ -74,6 +74,12 @@ a {
   background-image: url("organigrama.png");
 }
 
+.cuadro{
+  width: 100%;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
 .gris {
   
   width: 50%;
@@ -82,7 +88,7 @@ a {
 
 .negro {
   background-color: #008AFF;
-  width: 69%;
+  width: 68%;
   height: 89vh;
   margin-top: 34px;
   transition: all 2s;
@@ -668,7 +674,7 @@ ul{
   margin-top: -250px;
   margin-left: 524px;
   width: 38%;
-  height: 20%
+  height: 25%;
 }
 
 .texto5{
