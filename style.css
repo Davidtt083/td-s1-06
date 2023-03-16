@@ -81,11 +81,12 @@ a {
 }
 
 .negro {
-  /*background-color: #008AFF;*/
+  background-color: #008AFF;
   width: 69%;
   height: 89vh;
   margin-top: 34px;
   transition: all 2s;
+  z-index: 300;
 }
 .negro-move{
   background-color: #008AFF;
@@ -94,6 +95,7 @@ a {
   margin-top: 34px;
   transition: all 2s;
   margin-left: 703px;
+  z-index: 300;
 }
 
 .letrasG {
@@ -161,9 +163,7 @@ a {
   text-align: center;
   line-height: 180px;
   transition: all 1s;
-  box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
+
 }
 .btn1{
   position: absolute;
