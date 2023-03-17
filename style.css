@@ -713,3 +713,7 @@ li{
   line-height: 23px;
 
 }
+
+#frame{
+  transform: scale(1.2);
+}
